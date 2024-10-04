@@ -16,6 +16,7 @@ LeNet-5 is a classical Convolutional Neural Network (CNN) model originally propo
 - **MNIST Dataset**: The MNIST dataset, containing 60,000 training images and 10,000 test images of handwritten digits (0-9), is used for training and testing the model. The dataset is downloaded using `torchvision.datasets`.
 
 - **Data Analysis & Visualization**: The data is visualized using `matplotlib` to understand the structure and pixel distributions of different classes (digits).
+<img width="732" alt="image" src="https://github.com/user-attachments/assets/ae473cfd-9e06-40e2-982c-341347fa42b1">
 
 #### Model Architecture
 
@@ -32,6 +33,7 @@ The architecture is designed to capture hierarchical features and performs both 
 - **Loss Function**: Cross-Entropy Loss is used for classification tasks.
 - **Optimizer**: The Stochastic Gradient Descent (SGD) optimizer with a specified learning rate is used for optimizing the weights.
 - **Activation Functions**: The ReLU activation function is used to introduce non-linearity, and the Softmax function is applied in the output layer for classification.
+<img width="739" alt="image" src="https://github.com/user-attachments/assets/33809279-54da-4972-976e-b27a4ac3fd9e">
 
 ### GAN for MNIST
 
@@ -46,6 +48,8 @@ The two networks are trained simultaneously in a competitive manner.
 
 - **MNIST Dataset**: The MNIST dataset is used as the real dataset for training the discriminator.
 - **Data Analysis & Visualization**: Visualizations include displaying individual samples and superimposing pixel values for better understanding.
+<img width="725" alt="image" src="https://github.com/user-attachments/assets/bd5116dc-ebea-4b04-adc6-6dcf3f3f7424">
+
 
 #### GAN Architecture
 
@@ -62,6 +66,7 @@ The two networks are trained simultaneously in a competitive manner.
 - **Adversarial Training**: The generator and discriminator are trained in an adversarial setup. The loss for each network is optimized:
   - **Generator Loss**: Aims to maximize the discriminator's error rate, thereby "fooling" it.
   - **Discriminator Loss**: Minimizes the difference between real and fake samples.
+<img width="738" alt="image" src="https://github.com/user-attachments/assets/93ce731d-0cad-4267-8691-8a93241cefea">
 
 ## Getting Started
 
@@ -89,16 +94,19 @@ pip install -r requirements.txt
 - **GAN Notebook**: Open `GAN_MNIST.ipynb` to train the GAN to generate handwritten digits.
 
 ## Results and Analysis
+<img width="330" alt="image" src="https://github.com/user-attachments/assets/cbcbfd1c-f815-4fd8-b4c6-223b9bade33e">
 
 ### LeNet-5
 
 - **Accuracy**: Achieved over 99% accuracy on the test dataset, demonstrating the effectiveness of the CNN architecture for handwritten digit classification.
 
 - **Visualization**: Examples of correctly and incorrectly classified digits are visualized, showing the model's ability to learn different features.
+<img width="439" alt="image" src="https://github.com/user-attachments/assets/1e09a924-4a4b-4c78-a045-68943ad5174c">
 
 ### GAN
 
 - **Generated Images**: The GAN successfully generated realistic images of handwritten digits after training. Visualizations show the progress of generated images over training epochs.
+<img width="738" alt="image" src="https://github.com/user-attachments/assets/944d1d1f-1c40-407a-aa38-2af1c4dea99a">
 
 ## Contributing
 
